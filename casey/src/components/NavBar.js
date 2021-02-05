@@ -17,7 +17,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-import "../style/style.css"
+import "../style/style.css";
 
 const drawerWidth = 240;
 
@@ -118,7 +118,7 @@ export default function NavBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Mini variant drawer
+            React Finance App
           </Typography>
         </Toolbar>
       </AppBar>

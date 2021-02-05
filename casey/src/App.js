@@ -2,7 +2,8 @@ import React from "react";
 import Body from "./components/CardHolder";
 import Wrapper from "./components/Wrapper";
 import NavBar from "./components/NavBar";
-import SimpleCard from "./components/SimpleCard"
+import CardHolder from "./components/CardHolder"
+
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Wrapper>
       <NavBar />
         <Body />
+        <CardHolder />
       </Wrapper>
     </div>
   );

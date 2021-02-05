@@ -2,6 +2,7 @@
     background-color: grey;
 }
 * {
+    font-family: 'Raleway', sans-serif;
     background-color: rgb(229, 231, 236);
     color:rgb(10, 13, 14)
 }
@@ -9,6 +10,7 @@
     background-color: rgb(64, 43, 201);
  }
  h6 {
+     color: whitesmoke;
     background-color: rgb(64, 43, 201);
  }
  .simpleCard {
@@ -16,6 +18,13 @@
      background-color: slategray;
  }
  #cardHolder {
-     margin-left: 20%;
-     float: left;
+     margin-left: 20%,
+ }
+ .card {
+    max-width: 300px;
+     margin-left: 10%;
+     border: black;
+ }
+ div.MuiCardContent-root {
+     border: black;
  }
