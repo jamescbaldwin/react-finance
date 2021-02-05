@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import Quotes from "./Quotes";
 import News from "./News";
+import Chart from "./Charts";
 
 class Data extends React.Component {
 state = {
     apiData: [],
-    apiNews :[]
+    apiNews :[],
+    apiCharts :[]
 }
 componentDidMount() {
     API.getStocks("tesla")
@@ -31,9 +33,19 @@ componentDidMount() {
             }
             apiNews.push(content)
         }
+        
+        for (let k = 0; k < res.data.charts.length; k++) {
+           let record = {
+                name : res.data.symbol[i].symbol,
+                interval: res.data.interval[i].interval,
+                
+            }
+            apiData.push(record)   
+        }
 
         this.setState({ apiData: apiData });
         this.setState({ apiNews: apiNews });
+        this.setState({ apiCharts: apiCharts });
     })
     .catch(err => console.log(err));
 }
