@@ -3,8 +3,19 @@
 }
 * {
     background-color: rgb(229, 231, 236);
-    color:rgb(42, 38, 73)
+    color:rgb(10, 13, 14)
 }
  .MuiToolbar-root {
-    background-image: linear-gradient(rgb(78, 47, 192), rgb(17, 78, 153));
+    background-color: rgb(64, 43, 201);
+ }
+ h6 {
+    background-color: rgb(64, 43, 201);
+ }
+ .simpleCard {
+     max-width: 300px;
+     background-color: slategray;
+ }
+ #cardHolder {
+     margin-left: 20%;
+     float: left;
  }

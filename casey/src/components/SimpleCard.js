@@ -28,7 +28,7 @@ export default function SimpleCard() {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} class="simpleCard">
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           Stock
@@ -49,5 +49,7 @@ export default function SimpleCard() {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
+
+    
   );
 }
