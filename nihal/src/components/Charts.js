@@ -3,11 +3,11 @@ var unirest = require("unirest");
 var req = unirest("GET", "https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/get-charts");
 
 req.query({
-	"symbol": "HYDR.ME",
+	"symbol": "tsla",
 	"interval": "5m",
 	"range": "1d",
 	"region": "US",
-	"comparisons": "^GDAXI,^FCHI"
+	
 });
 
 req.headers({
