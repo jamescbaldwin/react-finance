@@ -1,0 +1,10 @@
+#sideBar {
+    background-color: grey;
+}
+* {
+    background-color: rgb(229, 231, 236);
+    color:rgb(42, 38, 73)
+}
+ .MuiToolbar-root {
+    background-image: linear-gradient(rgb(78, 47, 192), rgb(17, 78, 153));
+ }
