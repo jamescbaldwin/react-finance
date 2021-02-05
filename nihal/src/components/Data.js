@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import Quotes from "./Quotes";
+import News from "./News";
+
 class Data extends React.Component {
 state = {
     apiData: [],
