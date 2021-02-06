@@ -1,9 +1,8 @@
 #sideBar {
-    background-color: grey;
+    background-color: whitesmoke;
 }
 * {
-    font-family: 'Raleway', sans-serif;
-    background-color: rgb(229, 231, 236);
+   
     color:rgb(10, 13, 14)
 }
  .MuiToolbar-root {
@@ -15,16 +14,24 @@
  }
  .simpleCard {
      max-width: 300px;
-     background-color: slategray;
+     background-color: white
  }
  #cardHolder {
      margin-left: 20%,
  }
  .card {
-    max-width: 300px;
+    max-width: 250px;
      margin-left: 10%;
-     border: black;
+     box-shadow: red;
  }
  div.MuiCardContent-root {
      border: black;
  }
+
+.holder {
+    border: black;
+    /* background-color: black; */
+}
+.header {
+    margin-left: 9%;
+}

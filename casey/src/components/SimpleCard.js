@@ -5,7 +5,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import FollowIcon from "./SideBar"
+import FollowIcon from "./FollowIcon"
 const useStyles = makeStyles({
   
   bullet: {
@@ -30,6 +30,7 @@ export default function SimpleCard() {
   return (
    
     <Card className={classes.root} class="card">
+    <paper>
       <CardContent class="card">
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           Stock
@@ -47,11 +48,9 @@ export default function SimpleCard() {
         </Typography>
         <FollowIcon />
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-     
+      </paper>
     </Card>
+   
     
     
   );

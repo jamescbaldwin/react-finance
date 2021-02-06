@@ -5,7 +5,7 @@ import SimpleCard from "./SimpleCard"
 export class CardHolder extends Component {
   render() {
     return (
-  <div>
+  <div class='holder'>
     <SimpleCard />
   </div>
     )
