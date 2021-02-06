@@ -9,28 +9,56 @@ class MainArea extends Component {
       people: [
         {
           id: 1,
-          name: "Search for a Stock",
-          description: "Enter a Ticker Symbol"
+          name: "Project 3 ",
+          company: "A React powered stock market tracker",
+          description: "https://github.com/jamescbaldwin/react-finance"
+        },
+        {
+          id: 2,
+          name: "Aro Parada",
+          company: "Raleigh, NC",
+          description: "https://github.com/AroParada"
+        },
+        {
+          id: 3,
+          name: "Casey Overton",
+          company: "Raleigh, NC",
+          description: "https://github.com/CaseyOverton"
+        },
+        {
+          id: 4,
+          name: "Christopher Derteano",
+          company: "Raleigh, NC",
+          description: "https://github.com/cadertea"
+        },
+        {
+          id: 5,
+          name: "James Baldwin",
+          company: "Raleigh, NC",
+          description: "https://github.com/jamescbaldwin"
+        },
+        {
+          id: 6,
+          name: "Nihal Williams",
+          company: "Raleigh, NC",
+          description: "https://github.com/nihalwill"
         }
-     
+        
       ]
     }
   }
 
-  removePerson(id) {
-    this.setState({ people: this.state.people.filter(person => person.id !== id)});
-  }
-
+  
   render () {
     let peopleCards = this.state.people.map(person => {
       return (
-        <Col sm="4">
-          <PeopleCard key={person.id} removePerson={this.removePerson.bind(this)} person={person} />
+        <Col sm="5">
+          <PeopleCard key={person.id}  person={person} />
         </Col>
       )
     })
     return (
-      <Container fluid>
+      <Container fluid inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
         <Row>
           {peopleCards}
         </Row>
@@ -40,3 +68,4 @@ class MainArea extends Component {
 }
 
 export default MainArea;
+
