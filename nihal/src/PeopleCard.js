@@ -12,8 +12,8 @@ class PeopleCard extends Component {
       <div>
         <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
           <CardBlock>
-            <CardTitle>{name}</CardTitle>
-            <CardSubtitle>{company}</CardSubtitle>
+            <CardTitle className="text-white" >{name}</CardTitle>
+            <CardSubtitle className="text-muted">{company}</CardSubtitle>
             <CardText> <a href={description} target="_blank" rel="noopener noreferrer">Github</a></CardText>
           </CardBlock>
         </Card>
