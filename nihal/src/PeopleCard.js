@@ -11,12 +11,10 @@ class PeopleCard extends Component {
     return (
       <div>
         <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
-          <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
           <CardBlock>
             <CardTitle>{name}</CardTitle>
             <CardSubtitle>{company}</CardSubtitle>
-            <CardText>{description}</CardText>
-            <Button color="success" onClick={() => this.props.removePerson(id)}>Search</Button>
+            <CardText> <a href={description} target="_blank" rel="noopener noreferrer">Github</a></CardText>
           </CardBlock>
         </Card>
       </div>
