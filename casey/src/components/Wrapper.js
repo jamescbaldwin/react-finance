@@ -2,7 +2,7 @@ import React from 'react';
 
 function Wrapper({ children }) {
   return (
-      <div className="wrapper">
+      <div class="wrapper" className="wrapper">
         { children }
       </div>
   );

@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
 import "../style/style.css"
-import SimpleCard from "./SimpleCard"
+import CardData from "../components/CardData"
 
 export class CardHolder extends Component {
   render() {
     return (
   <div class='holder'>
-    <SimpleCard />
+     <CardData />  
   </div>
     )
   }
 };
-
-
-
-
-
 
   export default CardHolder;

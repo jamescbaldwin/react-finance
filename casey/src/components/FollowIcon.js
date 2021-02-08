@@ -20,26 +20,6 @@ export default function FollowIcon() {
         inputProps={{ 'aria-label': 'secondary checkbox' }}
         color="primary"
       />
-      {/* <Switch
-        checked={state.checkedB}
-        onChange={handleChange}
-        color="primary"
-        name="checkedB"
-        inputProps={{ 'aria-label': 'primary checkbox' }}
-      /> */}
-      {/* <Switch inputProps={{ 'aria-label': 'primary checkbox' }} /> */}
-      {/* <Switch inputProps={{ 'aria-label': 'disabled checkbox' }} 
-       checked={state.checkedA}
-       onChange={handleChange}
-       name="checkedA"
-       
-       /> */}
-      {/* <Switch disabled checked inputProps={{ 'aria-label': 'primary checkbox' }} /> */}
-      {/* <Switch
-        defaultChecked
-        color="default"
-        inputProps={{ 'aria-label': 'checkbox with default color' }}
-      /> */}
     </div>
   );
 }

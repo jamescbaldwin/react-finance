@@ -20,18 +20,20 @@
      margin-left: 20%,
  }
  .card {
-    max-width: 250px;
-     margin-left: 10%;
-     box-shadow: red;
- }
- div.MuiCardContent-root {
-     border: black;
+   width: 200px;
+ margin-left: 10%;
+ border: black;
+
  }
 
 .holder {
-    border: black;
-    /* background-color: black; */
+    margin-top: 3%;
+
 }
 .header {
-    margin-left: 9%;
+    margin-left: 5%;
+ 
+}
+.wrapper {
+    margin-left: 2%;
 }

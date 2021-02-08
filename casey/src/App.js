@@ -3,8 +3,8 @@ import Body from "./components/CardHolder";
 import Wrapper from "./components/Wrapper";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header"
+import Card from "./components/Data/Card"
 import CardHolder from "./components/CardHolder"
-
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
       <Wrapper>
       <NavBar />
       <Header />
-        <Body />
-        <CardHolder />
+      <Body />
+      <CardHolder />
       </Wrapper>
     </div>
   );
