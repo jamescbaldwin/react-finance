@@ -1,14 +1,12 @@
-import React, { Component } from "react";
+
+import React from "react";
 import API from "../utils/API";
 import Quotes from "./Quotes";
 import News from "./News";
-import Chart from "./Charts";
-
 class Data extends React.Component {
 state = {
     apiData: [],
-    apiNews :[],
-    apiCharts :[]
+    apiNews :[]
 }
 componentDidMount() {
     API.getStocks("tesla")
@@ -25,27 +23,8 @@ componentDidMount() {
             apiData.push(record)   
         }
 
-        for (let j = 0; j < res.data.news.length; j++) {
-            let content = {
-                link: res.data.news[j].link,
-                title: res.data.news[j].title,
-                publisher: res.data.news[j].publisher
-            }
-            apiNews.push(content)
-        }
-        
-        for (let k = 0; k < res.data.charts.length; k++) {
-           let record = {
-                name : res.data.symbol[i].symbol,
-                interval: res.data.interval[i].interval,
-                
-            }
-            apiData.push(record)   
-        }
-
         this.setState({ apiData: apiData });
         this.setState({ apiNews: apiNews });
-        this.setState({ apiCharts: apiCharts });
     })
     .catch(err => console.log(err));
 }
@@ -56,8 +35,13 @@ componentDidMount() {
              name= {rec.name}
              symbol ={rec.symbol}
              score = {rec.score}
-             key={key}/>)}   
-                
+             key={key}/>)} 
+
+            {this.state.apiNews.map( (rec,key) => <News
+             link= {rec.link}
+             title ={rec.title}
+             publisher = {rec.publisher}
+             key={key}/>)}          
        </div> 
        )
 }
