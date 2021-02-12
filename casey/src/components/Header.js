@@ -1,23 +1,17 @@
 import React, { Component } from 'react';
 import "../style/style.css"
-import SearchBar from './Search/SearchBar';
+import Searchbar from './Search/SearchBar';
 import TrendingUpTwoToneIcon from '@material-ui/icons/TrendingUpTwoTone';
 
 
-export class Header extends Component {
-  render() {
-    return (
+function Header() {
+  return (
   <div class='header'>
-    <h1>Search Stocks   <TrendingUpTwoToneIcon /> </h1>
-    <SearchBar />
+    <h1>Search Stocks<TrendingUpTwoToneIcon /></h1>
+    <Searchbar class='search' />
   </div>
     )
-  }
-};
+  };
 
 
-
-
-
-
-  export default Header;
+export default Header;

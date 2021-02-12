@@ -1,5 +1,6 @@
 import React from 'react';
 import Switch from '@material-ui/core/Switch';
+import Typography from '@material-ui/core/typography'
 
 export default function FollowIcon() {
   const [state, setState] = React.useState({
@@ -20,6 +21,9 @@ export default function FollowIcon() {
         inputProps={{ 'aria-label': 'secondary checkbox' }}
         color="primary"
       />
+      <Typography variant="h5" component="h4">
+        {'Add to Dashboard'}
+        </Typography>
     </div>
   );
 }

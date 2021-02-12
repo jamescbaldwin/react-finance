@@ -1,8 +1,5 @@
-#sideBar {
-    background-color: whitesmoke;
-}
+
 * {
-   
     color:rgb(10, 13, 14)
 }
  .MuiToolbar-root {
@@ -12,10 +9,7 @@
      color: whitesmoke;
     background-color: rgb(64, 43, 201);
  }
- .simpleCard {
-     max-width: 300px;
-     background-color: white
- }
+
  #cardHolder {
      margin-left: 20%,
  }
@@ -31,9 +25,38 @@
 
 }
 .header {
-    margin-left: 5%;
- 
+   
+    margin-left: 7%;
+    font-size: 30px;
+    margin-bottom: 0%;
 }
 .wrapper {
-    margin-left: 2%;
+    margin-left: 7%;
 }
+
+/* searchbar */
+
+input[type=text], textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #390150;
+  }
+   
+  input[type=text]:focus, textarea:focus {
+    box-shadow: 0 0 5px rgb(61, 4, 114);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    /* border: 1px solid rgb(218, 8, 36); */
+  }
+  .search {
+      width: 600px;
+      height: 40px;
+      margin-left: 45%;
+      font-size: large;
+      
+  }

@@ -1,7 +1,7 @@
 import React from "react";
-import API from "../utils/API";
-import Cards from "./Data/Card";
-import News from "./Data/News";
+import API from "../../utils/API";
+import Cards from "./Card";
+import News from "./News";
 
 
 class CardData extends React.Component {
@@ -48,8 +48,8 @@ componentDidMount() {
              score = {rec.score}
              key={key}/>)}     
        </div> 
-       )
-}
-}
+        )
+    }
+  }
 
 export default CardData;
