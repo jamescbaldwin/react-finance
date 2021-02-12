@@ -6,10 +6,10 @@ import TrendingUpTwoToneIcon from '@material-ui/icons/TrendingUpTwoTone';
 
 function Header() {
   return (
-  <div class='header'>
+ <paper>
     <h1>Search Stocks<TrendingUpTwoToneIcon /></h1>
     <Searchbar class='search' />
-  </div>
+  </paper>
     )
   };
 

@@ -25,9 +25,11 @@ function Cards (props) {
   //   };
   
     return (
+      <Grid container spacing={3}>
+      <Grid item xs={4}>
     
-        <column>
-        <Card variant="elevated">
+        
+        <Card >
         <CardContent>
         <Typography  color="textSecondary" gutterBottom>
          {props.symbol}
@@ -46,7 +48,9 @@ function Cards (props) {
         {"Add to Dashboard"}
       </CardContent>
     </Card>
-    </column>
+    
+    </Grid>
+    </Grid>
 
   )};
        
