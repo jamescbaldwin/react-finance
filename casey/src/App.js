@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import SearchBar from "./components/Search/SearchBar"
 import {ThemeProvider} from "@material-ui/core"
-import theme from "./theme"
+import theme from "./style/theme"
 
 import LoginPage from "./Route/LoginPage"
 import SearchPage from "./Route/SearchPage"
@@ -20,15 +20,10 @@ function App() {
       <Router>
       <Wrapper>
         <SearchPage />
-        <Route path="/" exact component={DashBoard} />
+        <Route path="/" exact component={Dashboard} />
         <Route path="/Search" exact component={SearchPage} />
         <Route path="/LoginPage" exact component={LoginPage} />
         <Route path="/SignUpPage" exact component={SignUpPage} />
-        <Route path="/Resume" exact component={Resume} />
-
-     
-     
-      
       </Wrapper>
       </Router>
     </div>
