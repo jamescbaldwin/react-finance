@@ -1,28 +1,27 @@
 import React from 'react';
 import Switch from '@material-ui/core/Switch';
-import Typography from '@material-ui/core/typography'
+import Typography from '@material-ui/core/typography';
+import Checkbox from '@material-ui/core/Checkbox';
+import { Component, state, setState } from 'react';
 
-export default function FollowIcon() {
-  const [state, setState] = React.useState({
-    checkedA: true
-    // checkedB: true,
-  });
 
+
+  export default function FollowIcon() {
+    const [checked, setChecked] = React.useState(true);
+  
   const handleChange = (event) => {
     setState({ ...state, [event.target.name]: event.target.checked });
   };
 
   return (
     <div>
-      <Switch
-        checked={state.checkedA}
-        onChange={handleChange}
-        name="checkedA"
-        inputProps={{ 'aria-label': 'secondary checkbox' }}
+      <Checkbox
+        defaultChecked
         color="primary"
+        inputProps={{ 'aria-label': 'secondary checkbox' }}
       />
       <Typography variant="h5" component="h4">
-        {'Add to Dashboard'}
+            {/* defaultChecked = true  : {'Following} ? {'Follow'}  */}
         </Typography>
     </div>
   );

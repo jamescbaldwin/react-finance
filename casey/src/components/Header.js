@@ -8,8 +8,8 @@ function Header() {
   return (
  <paper>
     <h1>Search Stocks<TrendingUpTwoToneIcon /></h1>
-    <Searchbar class='search' />
-  </paper>
+    <Searchbar className='search' />
+ </paper>
     )
   };
 

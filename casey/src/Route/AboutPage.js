@@ -5,12 +5,12 @@ import NavBar from "../components/NavBar"
 
 
 
-function Dashboard() {
+function AboutPage() {
     return (
       <div>
-    <NavBar />
+      <NavBar />
        <paper>
-        <h1>DASHBOARD!</h1>
+        <h1>ABOUT</h1>
         </paper>
        
       </div>
@@ -19,4 +19,4 @@ function Dashboard() {
   
 
 
-export default Dashboard;
+export default AboutPage;
