@@ -1,7 +1,11 @@
 import * as React from 'react';
+import { setState, } from 'react';
 import { withRouter } from 'react-router-dom';
+import '@progress/kendo-ui';
 import { Drawer, DrawerContent } from '@progress/kendo-react-layout';
+import '@progress/kendo-theme-default/dist/all.css';
 import { Button } from '@progress/kendo-react-buttons';
+
 
 const items = [
     { text: 'Home', selected: true, route: '/' },
@@ -11,6 +15,7 @@ const items = [
     { text: 'Sign Up', route: '/SignUp' },
 ];
 class NavBar extends React.Component {
+
     state = { expanded: true }
 
     handleClick = () => {
@@ -34,7 +39,7 @@ class NavBar extends React.Component {
             <div>
                 <div className="custom-toolbar">
                     <Button icon="menu" look="flat" onClick={this.handleClick} />
-                    <span className="title">Navigational drawer</span>
+                    <span className="title">React Finance</span>
                 </div>
                 <Drawer
                     expanded={this.state.expanded}

@@ -1,4 +1,5 @@
 import React from "react";
+import '@progress/kendo-theme-default/dist/all.css';
 import CardDiv from "./components/Card/CardDiv";
 import Wrapper from "./components/Wrapper";
 import NavBar from "./components/NavBar";

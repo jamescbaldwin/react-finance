@@ -2,7 +2,7 @@ import React from "react";
 import API from "../../utils/API";
 import Cards from "./Card";
 import News from "./News";
-
+import CardTest from './CardTest'
 
 class CardData extends React.Component {
 state = {
@@ -42,7 +42,7 @@ componentDidMount() {
         return (
 
         <div>
-            {this.state.apiData.map( (rec,key) => <Cards
+            {this.state.apiData.map( (rec,key) => <CardTest
              name= {rec.name}
              symbol ={rec.symbol}
              score = {rec.score}
