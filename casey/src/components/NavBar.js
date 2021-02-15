@@ -3,8 +3,12 @@ import { setState, } from 'react';
 import { withRouter } from 'react-router-dom';
 import '@progress/kendo-ui';
 import { Drawer, DrawerContent } from '@progress/kendo-react-layout';
-import '@progress/kendo-theme-default/dist/all.css';
 import { Button } from '@progress/kendo-react-buttons';
+// import "@progress/kendo-theme-bootstrap/scss/all";
+import "@progress/kendo-theme-bootstrap"
+
+
+// @import '~@progress/kendo-theme-default/scss/all';
 
 
 const items = [
@@ -38,7 +42,7 @@ class NavBar extends React.Component {
         return (
             <div>
                 <div className="custom-toolbar">
-                    <Button icon="menu" look="flat" onClick={this.handleClick} />
+                    <Button icon="menu" look="outlined" onClick={this.handleClick} />
                     <span className="title">React Finance</span>
                 </div>
                 <Drawer

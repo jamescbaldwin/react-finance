@@ -17,16 +17,19 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
   return (
+   
     <div className="App">
+  
      <Router>
-      <Wrapper>
+     <NavBar  className="k-button k-primary" />
+      {/* <Wrapper> */}
         {/* <SearchPage /> */}
         <Route path="/" exact component={Dashboard} />
         <Route path="/Search" exact component={SearchPage} />
         <Route path="/Login" exact component={LoginPage} />
         <Route path="/SignUp" exact component={SignUpPage} />
         <Route path="/About" exact component={AboutPage} />
-      </Wrapper>
+      {/* </Wrapper> */}
      </Router>
     </div>
   );

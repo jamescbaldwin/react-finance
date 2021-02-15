@@ -8,7 +8,6 @@ import Reward from "../components/Card/Reward"
 function Dashboard() {
     return (
       <div>
-          <NavBar  className="k-button k-primary" />
         
         <h1>DASHBOARD!</h1>
         <CardTest />

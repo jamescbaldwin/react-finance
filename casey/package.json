@@ -19,6 +19,7 @@
     "@progress/kendo-react-intl": "^4.3.0",
     "@progress/kendo-react-layout": "^4.3.0",
     "@progress/kendo-react-treeview": "^4.3.0",
+    "@progress/kendo-theme-bootstrap": "^4.31.0",
     "@progress/kendo-theme-default": "^4.32.0",
     "@progress/kendo-ui": "^2021.1.119",
     "@testing-library/jest-dom": "^5.11.9",

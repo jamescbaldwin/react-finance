@@ -3,9 +3,9 @@ import { Switch } from '@progress/kendo-react-inputs';
 import * as ReactDOM from 'react-dom';
 import { Card, CardBody, CardActions } from '@progress/kendo-react-layout';
 import { Component, State, setState } from 'react';
-import Reward from 'react-rewards';
+import RewardButton from 'react-rewards';
 import { Button } from '@progress/kendo-react-buttons';
-import RewardButton from "../Card/Reward"
+import RewardButtons from "../Card/Reward"
 // const defaults = {
 //     confetti: {
 //       type: 'confetti',
@@ -78,7 +78,7 @@ function fetchSomeData(ref) {
                     <div className="k-form-field">
                         <b>{expandMode}</b>
                     </div>
-                    <Reward />
+                    <RewardButton />
             </Card>
            </div>
         )}

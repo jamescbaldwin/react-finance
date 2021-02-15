@@ -38,7 +38,7 @@ const defaults = {
     }
   }
   
-  export default class RewardButton extends Component {
+  export default class RewardButtons extends Component {
     state = {
       ...defaults.memphis,
       rewardPunish: 'reward'
@@ -74,7 +74,7 @@ const defaults = {
       } = this.state
       const disabled = rewardPunish === 'punish'
       return (
-        <div >
+       
           <Reward
             ref={ref => {
               this.reward = ref
@@ -93,14 +93,15 @@ const defaults = {
             }}
           >
             <Button
-              type='primary'
+              primary={true} look="outline"
               loading={fakingRequest}
               icon={type ? 'like' : 'trophy'}
               size='small'
               onClick={this.fakeRequest}
-            />
+            >Follow?</Button>
           </Reward>
-        </div>
+             
+        
       )
     }
   }
