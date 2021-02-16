@@ -10,10 +10,10 @@ function Dashboard() {
       <div>
         
         <h1>DASHBOARD!</h1>
-        
+{/*         
         <Reward />
         <Reward />
-        
+         */}
        
       </div>
     );

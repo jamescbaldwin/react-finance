@@ -1,23 +1,11 @@
 * {
-    color:rgb(10, 13, 14)
+    font-family: 'Montserrat', sans-serif;
 }
- .MuiToolbar-root {
-    background-color: rgb(64, 43, 201);
- }
- h6 {
-     color: whitesmoke;
-    background-color: rgb(64, 43, 201);
- }
-
- #cardHolder {
-     margin-left: 20%,
- }
 .holder {
     margin-top: 3%;
 
 }
 .header {
-   
     margin-left: 7%;
     font-size: 30px;
     margin-bottom: 0%;
@@ -52,3 +40,31 @@ input[type=text], textarea {
       font-size: large;
       
   }
+
+  /* navbar */
+
+ 
+.title {
+    font-size: 18px;
+    margin: 0;
+}
+ul {
+    font-size: 14px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+li {
+    margin: 0 10px;
+}
+li:hover {
+    cursor: pointer;
+    color: #84cef1;
+}
+.k-button {
+    padding: 0;
+}
+.k-badge-container {
+    margin-right: 8px;
+}

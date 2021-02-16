@@ -6,7 +6,7 @@ import { Drawer, DrawerContent } from '@progress/kendo-react-layout';
 import { Button } from '@progress/kendo-react-buttons';
 // import "@progress/kendo-theme-bootstrap/scss/all";
 import "@progress/kendo-theme-bootstrap"
-
+import { AppBar, AppBarSection, AppBarSpacer } from '@progress/kendo-react-layout';
 
 // @import '~@progress/kendo-theme-default/scss/all';
 
@@ -41,10 +41,6 @@ class NavBar extends React.Component {
         let selected = this.setSelectedItem(this.props.location.pathname);
         return (
             <div>
-                <div className="custom-toolbar">
-                    <Button icon="menu" look="outlined" onClick={this.handleClick} />
-                    <span className="title">React Finance</span>
-                </div>
                 <Drawer
                     expanded={this.state.expanded}
                     position={'start'}
@@ -55,10 +51,16 @@ class NavBar extends React.Component {
                     onSelect={this.onSelect}
                     
                 >
-                    <DrawerContent color="Accent">
+                     <div className="custom-toolbar">
+                    <Button icon="menu" look="outlined" onClick={this.handleClick} />
+                    <span className="title">   React Finance</span>
+                </div> 
+                    <DrawerContent>
                         {this.props.children}
                     </DrawerContent>
                 </Drawer>
+
+               
             </div>
         );
     }

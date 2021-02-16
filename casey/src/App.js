@@ -4,7 +4,7 @@ import '@progress/kendo-theme-default/dist/all.css';
 import CardDiv from "./components/Card/CardDiv";
 import Wrapper from "./components/Wrapper";
 import NavBar from "./components/NavBar";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import SearchBar from "./components/Search/SearchBar"
 import LoginPage from "./Route/Login/LoginPage"
 import SearchPage from "./Route/Search/SearchPage"
@@ -31,7 +31,8 @@ function App() {
             <Route path="/SignUp" exact component={SignUpPage} />
             <Route path="/About" exact component={AboutPage} />
       {/* </Wrapper> */}
-          </NavBar>
+       
+          </ NavBar>
         </Router>
      
     </div>
