@@ -19,18 +19,22 @@ function App() {
   return (
    
     <div className="App">
-  
-     <Router>
-     <NavBar  className="k-button k-primary" />
+      
+        <Router>
+          <NavBar>
+     {/* className="k-button k-primary" */}
+     
       {/* <Wrapper> */}
         {/* <SearchPage /> */}
-        <Route path="/" exact component={Dashboard} />
-        <Route path="/Search" exact component={SearchPage} />
-        <Route path="/Login" exact component={LoginPage} />
-        <Route path="/SignUp" exact component={SignUpPage} />
-        <Route path="/About" exact component={AboutPage} />
+            <Route path="/" exact component={Dashboard} />
+            <Route path="/Search" exact component={SearchPage} />
+            <Route path="/Login" exact component={LoginPage} />
+            <Route path="/SignUp" exact component={SignUpPage} />
+            <Route path="/About" exact component={AboutPage} />
       {/* </Wrapper> */}
-     </Router>
+          </NavBar>
+        </Router>
+     
     </div>
   );
 }

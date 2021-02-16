@@ -12,10 +12,10 @@ import theme from "../style/theme"
 function SearchPage() {
   return (
     <div>
-      <NavBar />
-    <paper>
+      
+      <Paper>
         <Header />
-    </paper>
+      </Paper>
      
     <CardDiv />
      

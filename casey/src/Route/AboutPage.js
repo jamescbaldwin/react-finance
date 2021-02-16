@@ -8,7 +8,7 @@ import NavBar from "../components/NavBar"
 function AboutPage() {
     return (
       <div>
-      <NavBar />
+      
        <paper>
         <h1>ABOUT</h1>
         </paper>

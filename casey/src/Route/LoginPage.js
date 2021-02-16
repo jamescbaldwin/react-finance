@@ -8,7 +8,7 @@ import NavBar from "../components/NavBar"
 function LoginPage() {
     return (
       <div>
-    <NavBar />
+   
        <paper>
         <h1>LOGINNN</h1>
        

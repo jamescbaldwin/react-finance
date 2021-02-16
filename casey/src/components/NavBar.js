@@ -16,7 +16,7 @@ const items = [
     { text: 'Search', route: '/Search' },
     { text: 'About', route: '/About' },
     { text: 'Login', route: '/Login' },
-    { text: 'Sign Up', route: '/SignUp' },
+    { text: 'Sign Up', route: '/SignUp' }
 ];
 class NavBar extends React.Component {
 
@@ -53,6 +53,7 @@ class NavBar extends React.Component {
                     items={items.map(
                         (item) => ({ ...item, selected: item.text === selected }))}
                     onSelect={this.onSelect}
+                    
                 >
                     <DrawerContent>
                         {this.props.children}
@@ -64,3 +65,5 @@ class NavBar extends React.Component {
 }
 
 export default withRouter(NavBar);
+
+

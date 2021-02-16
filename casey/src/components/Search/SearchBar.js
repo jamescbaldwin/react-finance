@@ -1,15 +1,16 @@
 import React from 'react';
 import API from "../../utils/API";
+
 import { Component, state, setState } from 'react';
 
 class Searchbar extends  React.Component {
 	constructor( props ) {
 		super( props );
 		this.state = {
-			query:               '',
-                        results: {},
-                        loading: false,
-                        message: '',
+			query:'',
+            results: {},
+        	loading: false,
+            message: '',
 		};
 	}
 
@@ -58,6 +59,7 @@ class Searchbar extends  React.Component {
 						value=""
 						id="search-input"
 						placeholder="Search..."
+
 					/>
 					<i className="fa fa-search search-icon"/>
 				</label>

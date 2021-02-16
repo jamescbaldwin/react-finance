@@ -10,7 +10,7 @@ function Dashboard() {
       <div>
         
         <h1>DASHBOARD!</h1>
-        <CardTest />
+        
         <Reward />
         <Reward />
         
