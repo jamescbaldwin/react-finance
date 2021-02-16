@@ -55,7 +55,7 @@ class NavBar extends React.Component {
                     onSelect={this.onSelect}
                     
                 >
-                    <DrawerContent>
+                    <DrawerContent color="Accent">
                         {this.props.children}
                     </DrawerContent>
                 </Drawer>

@@ -1,7 +1,7 @@
 import React from "react";
-import SearchBar from "../components/Search/SearchBar"
+import SearchBar from "../../components/Search/SearchBar"
 import {ThemeProvider, Paper} from "@material-ui/core"
-import Navbar from "../components/NavBar";
+import Navbar from "../../components/NavBar";
 
 
 function SignUpPage() {

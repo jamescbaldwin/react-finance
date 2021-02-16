@@ -1,17 +1,16 @@
 import React from "react";
 import Paper from "@material-ui/core"
-import NavBar from "../components/NavBar"
 
 
 
 
-function LoginPage() {
+
+function AboutPage() {
     return (
       <div>
-   
+      
        <paper>
-        <h1>LOGINNN</h1>
-       
+        <h1>ABOUT</h1>
         </paper>
        
       </div>
@@ -20,4 +19,4 @@ function LoginPage() {
   
 
 
-export default LoginPage;
+export default AboutPage;

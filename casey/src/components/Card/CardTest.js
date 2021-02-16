@@ -65,7 +65,7 @@ function fetchSomeData(ref) {
     
         return (
             
-                   <div style={{ display: 'flex', justifyContent: 'space-evenly', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
             <Card style={{ width: 300 }}>
                 <CardBody>
                     <h1>{props.name}</h1>
@@ -74,11 +74,11 @@ function fetchSomeData(ref) {
                          <span className="k-button k-flat k-primary"><p>{props.symbol}</p></span>
                          <span className="k-button k-flat k-primary">{props.score}</span>
                     </CardActions>
+                    
                 <Switch checked={mode} onChange={handleChange} />
                     <div className="k-form-field">
                         <b>{expandMode}</b>
                     </div>
-                    <RewardButton />
             </Card>
            </div>
         )}
