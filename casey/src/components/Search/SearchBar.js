@@ -1,51 +1,34 @@
 import React from 'react';
 import API from "../../utils/API";
+import { Button } from '@progress/kendo-react-buttons';
+import CardData from "../Card/CardData"
 
 import { Component, state, setState } from 'react';
 
 class Searchbar extends  React.Component {
-	constructor( props ) {
-		super( props );
-		this.state = {
+		state = {
 			query:'',
             results: {},
         	loading: false,
             message: '',
 		};
-	}
 
 
 	handleOnInputChange = (event) => {
+		// console.log("event", event.target.value)
+
+
+
 		const query = event.target.value;
-				  this.setState({ query } );
-				  API.getStocks({ query })
-				  .then(res => {
-					  console.log(res);
-					  let apiData = []
-					  let apiNews = []
-					  for (let i = 0; i < res.data.quotes.length; i++) {
-						 let record = {
-							  name : res.data.quotes[i].shortname,
-							  symbol: res.data.quotes[i].symbol,
-							  score: res.data.quotes[i].score
-						  }
-						  apiData.push(record)   
-					  }
-			  
-					  for (let j = 0; j < res.data.news.length; j++) {
-						  let content = {
-							  link: res.data.news[j].link,
-							  title: res.data.news[j].title,
-							  publisher: res.data.news[j].publisher
-						  }
-						  apiNews.push(content)
-					  }
-			  
-					  this.setState({ apiData: apiData });
-					  this.setState({ apiNews: apiNews });
-				  })
-				  .catch(err => console.log(err));
+				  this.setState({ query });
 	  };
+
+	  handleOnClick = (event) => {
+		  event.preventDefault()
+		  console.log(this.state.query)
+		  const search = new CardData({query: this.state.query})
+		 
+		 }
 
 	render() {
 		return (
@@ -56,11 +39,13 @@ class Searchbar extends  React.Component {
 				<label className="search-label" htmlFor="search-input">
 					<input
 						type="text"
-						value=""
 						id="search-input"
 						placeholder="Search..."
-
+						onChange={this.handleOnInputChange}
+					
+					
 					/>
+					<Button onClick={this.handleOnClick}icon="refresh"></Button>
 					<i className="fa fa-search search-icon"/>
 				</label>
 				

@@ -4,13 +4,24 @@ import Cards from "./Card";
 import News from "./News";
 import CardTest from './CardTest'
 
+
+
 class CardData extends React.Component {
-state = {
-    apiData: [],
-    apiNews :[]
-}
-componentDidMount() {
-    API.getStocks("tesla")
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            query: props.query,
+            apiData: [],
+            apiNews :[]
+        }
+      }
+
+componentDidMount() { 
+    // this.setState(this.props)
+    console.log(this.props)
+
+    API.getStocks(this.state.query)
     .then(res => {
         console.log(res);
         let apiData = []
