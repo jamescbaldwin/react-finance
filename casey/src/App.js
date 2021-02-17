@@ -13,6 +13,7 @@ import AboutPage from "./Route/About/AboutPage"
 import Dashboard from "./Route/Dashboard/Dashboard"
 import { Route, Switch } from "react-router-dom";
 import { BrowserRouter as Router } from 'react-router-dom'
+import CoinTest from '../src/CoinTest'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       
         <Router>
           <NavBar>
+            <CoinTest />
      {/* className="k-button k-primary" */}
      
       {/* <Wrapper> */}

@@ -55,6 +55,28 @@ class Searchbar extends  React.Component {
     }
 export default Searchbar;
 
+
+
+
+// import React from 'react';
+// import './searchbar.css';
+
+// function SearchBar(props) {
+
+//     return  (
+//       <div className="SearchBar">
+//         <form className="SearchBar_Form">
+//           <input className="SearchBar__Input"
+//                  value={ props.value }
+//                  onChange={ props.onChange } />
+//           <button className="SearchBar__Button" onClick={ props.onClick }>search</button>
+//         </form>
+//       </div>
+//     );
+// }
+
+// export default SearchBar;
+
 // import React, { Component } from "react";
 // import DataTable from "./DataTable";
 // import Nav from "./NavBar";

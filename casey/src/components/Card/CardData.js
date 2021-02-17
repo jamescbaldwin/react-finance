@@ -52,6 +52,13 @@ componentDidMount() {
     render() {
         return (
 
+
+
+
+
+
+            
+
         <div>
             {this.state.apiData.map( (rec,key) => <CardTest
              name= {rec.name}
