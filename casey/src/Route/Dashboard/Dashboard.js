@@ -1,21 +1,16 @@
 import React from "react";
-import Paper from "@material-ui/core/Paper"
-import NavBar from "../../components/NavBar"
-import CardTest from "../../components/Card/CardTest"
 import Reward from "../../components/Card/Reward"
-
 
 function Dashboard() {
     return (
       <div>
-        
-        <h1>DASHBOARD!</h1>
-{/*         
-        <Reward />
-        <Reward />
-         */}
-       
-      </div>
+        <div>
+          <h1>Dashboard</h1>
+          <h1>Status: 
+            {/* {props.loggedInStatus} */}
+            </h1>
+        </div>
+    </div>
     );
   }
   

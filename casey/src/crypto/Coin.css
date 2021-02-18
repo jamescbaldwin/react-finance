@@ -1,6 +1,8 @@
 .coin-container {
     display: flex;
     justify-content: center;
+    overflow-y: scroll;
+
   }
   
   .coin-row {
@@ -11,6 +13,7 @@
     height: 80px;
     border-bottom: 1px solid #d7d7d7;
     width: 500px;
+    
   }
   
   .coin {
@@ -55,9 +58,9 @@
     width: 230px;
   } */
   
-  /* .coin-percent {
-    width: 90px;
-  } */
+  .coin-percent {
+    width: 40px;
+  }
   
   .red {
     color: #f40101;
