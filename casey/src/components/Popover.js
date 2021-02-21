@@ -8,7 +8,8 @@ import MuiDialogActions from '@material-ui/core/DialogActions';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import Typography from '@material-ui/core/Typography';
-
+import { useAuth0 } from '@auth0/auth0-react'
+import JSONPretty from "react-json-pretty"
 const styles = (theme) => ({
   root: {
     margin: 0,
@@ -49,7 +50,7 @@ const DialogActions = withStyles((theme) => ({
   },
 }))(MuiDialogActions);
 
-export default function CustomizedDialogs() {
+export default function ProfileSO() {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -59,27 +60,27 @@ export default function CustomizedDialogs() {
     setOpen(false);
   };
 
+  const { user, isAuthenticated } = useAuth0()
+
   return (
+    isAuthenticated && (
     <div>
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-        {user.name}
+        {user.nickname}
       </Button>
       <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
         <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-          {user.name}
+        {user.email}
         </DialogTitle>
         <DialogContent dividers>
-      
           <img src={user.picture} alt={user.name} />
-          <p>{user.email}</p>
-
         </DialogContent>
-        <DialogActions>
-          <Button autoFocus onClick={handleClose} color="primary">
-            Save changes
-          </Button>
-        </DialogActions>
+        <DialogContent dividers>
+         <JSONPretty data={user} />
+       </DialogContent>
       </Dialog>
     </div>
-  );
-}
+   ) 
+  
+  )}
+
