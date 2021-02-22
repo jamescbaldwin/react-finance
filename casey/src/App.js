@@ -1,18 +1,16 @@
-import React from "react";
-import Wrapper from "./components/Wrapper";
+import React, { Component } from "react";
 import ProfileSO from './components/Popover'
-import Profile from './components/Profile'
+import LoginButton from "./components/LoginButton"
+import LogoutButton from "./components/LogoutButton"
 
 function App() {
   return (
-   
-    <div className="App">
-     
-     <ProfileSO />
-  
-    </div>
+    <>
+      <ProfileSO />
+     <LoginButton />
+     <LogoutButton />
+     </>
   );
 }
-
 
 export default App;
