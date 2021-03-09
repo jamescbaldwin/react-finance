@@ -36,7 +36,7 @@ app.use('/api', require('./routes/apiRoutes'));
 
 // If no routes are hit, send the React app
 app.use(function(req, res) {
-  res.sendFile(path.join(__dirname, '../../client/build/index.html'));
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
 // Error handler
